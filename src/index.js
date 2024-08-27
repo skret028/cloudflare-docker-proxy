@@ -29,7 +29,7 @@ const routes = {
   "ecr.tk1n.org": "https://public.ecr.aws",
 
   // staging
-  "docker-staging.tk1n.cn": dockerHub,
+  "docker-staging.tk1n.org": dockerHub,
 };
 
 function routeByHosts(host) {
