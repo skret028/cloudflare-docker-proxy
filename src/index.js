@@ -19,14 +19,14 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  "docker.tk1n.cn": dockerHub,
-  "quay.tk1n.cn": "https://quay.io",
-  "gcr.tk1n.cn": "https://gcr.io",
-  "k8s-gcr.tk1n.cn": "https://k8s.gcr.io",
-  "k8s.tk1n.cn": "https://registry.k8s.io",
-  "ghcr.tk1n.cn": "https://ghcr.io",
-  "cloudsmith.tk1n.cn": "https://docker.cloudsmith.io",
-  "ecr.tk1n.cn": "https://public.ecr.aws",
+  "docker.tk1n.cloudns.ch": dockerHub,
+  "quay.tk1n.cloudns.ch": "https://quay.io",
+  "gcr.tk1n.cloudns.ch": "https://gcr.io",
+  "k8s-gcr.tk1n.cloudns.ch": "https://k8s.gcr.io",
+  "k8s.tk1n.cloudns.chn": "https://registry.k8s.io",
+  "ghcr.tk1n.cloudns.ch": "https://ghcr.io",
+  "cloudsmith.tk1n.cloudns.ch": "https://docker.cloudsmith.io",
+  "ecr.tk1n.cloudns.ch": "https://public.ecr.aws",
 
   // staging
   "docker-staging.tk1n.cn": dockerHub,
