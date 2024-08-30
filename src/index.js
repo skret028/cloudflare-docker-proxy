@@ -8,14 +8,6 @@ const dockerHub = "https://registry-1.docker.io";
 const routes = {
   // production
   "dockerhub2.tk1n.org": "https://hub.docker.com",
-  "docker.tk1n.org": dockerHub,
-  "quay.tk1n.org": "https://quay.io",
-  "gcr.tk1n.org": "https://gcr.io",
-  "k8s-gcr.tk1n.org": "https://k8s.gcr.io",
-  "k8s.tk1n.org": "https://registry.k8s.io",
-  "ghcr.tk1n.org": "https://ghcr.io",
-  "cloudsmith.tk1n.org": "https://docker.cloudsmith.io",
-
 
   // staging
   "docker-staging.tk1n.org": dockerHub,
@@ -105,17 +97,7 @@ async function handleRequest(request) {
     }
     return await fetchToken(wwwAuthenticate, scope, authorization);
   }
-  // redirect for DockerHub library images
-  // Example: /v2/busybox/manifests/latest => /v2/library/busybox/manifests/latest
-  if (isDockerHub) {
-    const pathParts = url.pathname.split("/");
-    if (pathParts.length == 5) {
-      pathParts.splice(2, 0, "library");
-      const redirectUrl = new URL(url);
-      redirectUrl.pathname = pathParts.join("/");
-      return Response.redirect(redirectUrl, 301);
-    }
-  }
+
   // foward requests
   const newUrl = new URL(upstream + url.pathname);
   const newReq = new Request(newUrl, {
