@@ -15,7 +15,7 @@ const routes = {
   "k8s.tk1n.org": "https://registry.k8s.io",
   "ghcr.tk1n.org": "https://ghcr.io",
   "cloudsmith.tk1n.org": "https://docker.cloudsmith.io",
-  "ecr.tk1n.org": "https://public.ecr.aws",
+
 
   // staging
   "docker-staging.tk1n.org": dockerHub,
