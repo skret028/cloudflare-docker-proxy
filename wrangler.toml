@@ -14,13 +14,6 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 name = "cloudflare-docker-proxy"
  routes = [
    { pattern = "dockerhub2.tk1n.org", custom_domain = true },
-   { pattern = "docker.tk1n.org", custom_domain = true },
-   { pattern = "quay.tk1n.org", custom_domain = true },
-   { pattern = "gcr.tk1n.org", custom_domain = true },
-   { pattern = "k8s-gcr.tk1n.org", custom_domain = true },
-   { pattern = "k8s.tk1n.org", custom_domain = true },
-   { pattern = "ghcr.tk1n.org", custom_domain = true },
-   { pattern = "cloudsmith.tk1n.org", custom_domain = true },
  ]
 
 [env.production.vars]
