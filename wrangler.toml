@@ -20,6 +20,7 @@ name = "cloudflare-docker-proxy"
    { pattern = "k8s.tk1n.org", custom_domain = true },
    { pattern = "ghcr.tk1n.org", custom_domain = true },
    { pattern = "cloudsmith.tk1n.org", custom_domain = true },
+   { pattern = "dockerhub.tk1n.org", custom_domain = true },
  ]
 
 [env.production.vars]
